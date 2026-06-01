@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Biblioteca</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Sistema de Libros</h1>
+        <div class="formulario">
+            <input type="text" id="txtNombreLibro" placeholder="Nombre del libro">
+            <input type="text" id="txtEditorial" placeholder="Editorial">
+            <input type="number" id="txtExistencias" placeholder="Existencias">
+            <button id="btnGuardar">Guardar Libro</button>
+        </div>
+
+        <div class="mensaje" id="mensaje"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Nombre Libro</th>
+                    <th>Editorial</th>
+                    <th>Existencias</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaLibros">
+            </tbody>
+        </table>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./JS/app.js"></script>
+</body>
+</html>
