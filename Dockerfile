@@ -2,7 +2,7 @@
 FROM php:8.2-apache 
 
 # Instalar extensiones necesarias para trabajar con PDO y MySQL 
-RUN docker-php-ext-install pdo pdo_mysql 
+RUN docker-php-ext-install pdo pdo_mysql mysqli
 
 # Copiar todos los archivos del proyecto 
 # al directorio principal de Apache 
