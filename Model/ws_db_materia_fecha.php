@@ -19,6 +19,7 @@ $consulta ="Select * from MATERIA where fecha_modificado>'".$year."-".$month."-"
 if ($resultado = $mysqli->query($consulta)) {
 	$filas=array();
     /* obtener un array asociativo */
+    //cambio
     while ($reg = $resultado->fetch_assoc()) {
         $filas[]=$reg;
     }
